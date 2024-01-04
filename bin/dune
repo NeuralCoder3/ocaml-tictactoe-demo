@@ -1,0 +1,14 @@
+(executable
+ (public_name tictactoe)
+ (name main)
+ (libraries 
+    tictactoe
+    bogue
+ )
+)
+
+; do not abort at warnings
+(env
+  (dev
+  (flags (:standard -warn-error -A)))
+)
